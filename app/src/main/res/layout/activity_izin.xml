@@ -1,0 +1,270 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/layoutInti">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                app:fontFamily="sans-serif-black"
+                android:text="Form Pengajuan Izin"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:id="@+id/text"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text">
+
+                <LinearLayout
+                    android:id="@+id/linlay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/black" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_below="@id/linlay1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/info">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ID Karyawan"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="14dp"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:id="@+id/kdKar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="14dp"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/infoNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_below="@id/info"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Karyawan"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="14dp"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:id="@+id/namaKar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="14dp"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linlay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/infoNama"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/linlay2"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblIzin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Izin"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="@color/headings"
+                            android:textSize="13sp" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/formIzin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblTgl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tanggal"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="@color/headings"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/formTgl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#C6C6C6"
+                            android:textSize="18sp"
+                            android:drawableEnd="@drawable/ic_calendar"
+                            android:focusable="false"
+                            android:editable="false"
+                            android:inputType="none"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblJam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jam"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="@color/headings"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/formJam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:drawableEnd="@drawable/ic_clock"
+                            android:focusable="false"
+                            android:editable="false"
+                            android:inputType="none"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblKeterangan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keterangan"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="@color/headings"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/formKeterangan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.AppCompat.ActionButton"
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Save"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            app:icon="@drawable/ic_save"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            android:layout_below="@+id/layoutInti">
+        </com.google.android.material.button.MaterialButton>
+
+    </RelativeLayout>
+
+
+</ScrollView>
