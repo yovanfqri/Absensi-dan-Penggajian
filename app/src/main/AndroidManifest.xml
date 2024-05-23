@@ -34,7 +34,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAw9_4uda8bc_hfw9D4du0z0uGTjNIq4iQ" />
+            android:value="" />
 
         <activity
             android:name=".ui.home.AbsenMasuk"
